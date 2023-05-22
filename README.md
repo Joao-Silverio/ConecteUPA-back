@@ -10,4 +10,4 @@ Após isso fazer as instalações dos programas necessários com os comandos
 - pip install PyJWT python-decouple
 
 Após as instalações feitas rode o programa com o seguinte comando:
-python -m uvicorn main:app --port 3333 --reload
+- python -m uvicorn main:app --port 3333 --reload
