@@ -1,39 +1,43 @@
 {
     "client": "Thunder Client",
     "collectionName": "conecteUPA",
-    "dateExported": "2023-05-08T17:09:00.159Z",
+    "dateExported": "2023-05-22T23:12:22.367Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "89dc9dbf-fb7e-4065-bf4e-e7aa72ebedae",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "b18d3489-ee5b-4a47-9668-c50c29957db1",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
             "name": "SingUpPost",
             "url": "http://localhost:3333/api/signup",
             "method": "POST",
             "sortNum": 5000,
-            "created": "2022-10-21T17:37:25.077Z",
-            "modified": "2022-11-04T00:01:14.401Z",
+            "created": "2023-05-22T22:03:39.510Z",
+            "modified": "2023-05-22T22:12:21.878Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nome\": \"Joao\",\n  \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"1234567\"\n}",
+                "raw": "{\n  \"nome\": \"Joao victor\",\n  \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"1234567\"\n}",
                 "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
             },
             "tests": []
         },
         {
-            "_id": "b2390d89-e8fc-47cb-8093-1ee6a3b98b45",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "75e33fe6-c68e-423f-862d-0a956eb834b8",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
             "name": "LoginPost ",
             "url": "http://localhost:3333/api/login",
             "method": "POST",
             "sortNum": 7500,
-            "created": "2022-10-21T19:05:27.431Z",
-            "modified": "2022-11-04T00:02:35.508Z",
+            "created": "2023-05-22T22:03:39.511Z",
+            "modified": "2023-05-22T22:12:36.214Z",
             "headers": [],
             "params": [],
             "body": {
@@ -41,23 +45,27 @@
                 "raw": "{\n  \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"1234567\"\n}",
                 "form": []
             },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
             "tests": []
         },
         {
-            "_id": "4dddb7c4-3709-4479-a818-c5f9377c401d",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "b5c62c05-e325-4340-9880-6155315fddeb",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
             "name": "UsuariosPost",
             "url": "http://localhost:3333/api/usuarios",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2022-10-14T14:17:13.660Z",
-            "modified": "2022-11-04T00:01:51.577Z",
+            "created": "2023-05-22T22:03:39.512Z",
+            "modified": "2023-05-22T22:53:53.628Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nome\": \"Joao\",\n  \"historico\": \"Historico medico: ALtura: 1,80\n Peso: 75kg\"  \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"123456\"\n}",
+                "raw": "{\n  \"nome\": \"Joao\",\n  \"historico\": \"Historico medico: ALtura: 1,80, Peso: 75kg\",\n  \"email\": \"joao.silverio@eduunivali.br\",\n  \"senha\": \"123456\"\n}",
                 "form": []
             },
             "auth": {
@@ -67,20 +75,20 @@
             "tests": []
         },
         {
-            "_id": "1453ce8c-9f38-4aea-8b20-4612048b8db0",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "2114ecc4-6c45-4a94-a538-ffe01fde6929",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
             "name": "UsuariosPut",
             "url": "http://localhost:3333/api/usuarios/1",
             "method": "PUT",
             "sortNum": 15000,
-            "created": "2022-10-14T14:21:33.826Z",
-            "modified": "2022-11-04T00:00:41.720Z",
+            "created": "2023-05-22T22:03:39.513Z",
+            "modified": "2023-05-22T22:30:50.184Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nome\": \"Joao\",\n  \"historico\": \"Historico medico: ALtura: 1,80\n Peso: 75kg\" \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"\"\n}",
+                "raw": "{\n  \"nome\": \"Joao\",\n  \"historico\": \"Historico medico: ALtura: 1,80Peso: 75kg\",\n  \"email\": \"joao.silverio@edu.univali.br\",\n  \"senha\": \"\"\n}",
                 "form": []
             },
             "auth": {
@@ -90,15 +98,51 @@
             "tests": []
         },
         {
-            "_id": "99f15d5a-5a40-45ba-bf79-2cb52852d35a",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "4a79495b-d5f1-4e49-bc3b-4153fc696d7c",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "UsuariosGetById",
+            "url": "http://localhost:3333/api/usuarios/3",
+            "method": "GET",
+            "sortNum": 16250,
+            "created": "2023-05-22T22:03:39.515Z",
+            "modified": "2023-05-22T23:12:10.097Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa0fbd7a-7eef-49c3-9f12-93306a8453bd",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "UsuariosGetAll",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "GET",
+            "sortNum": 16875,
+            "created": "2023-05-22T22:03:39.516Z",
+            "modified": "2023-05-22T23:12:12.264Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c76193d1-0624-468a-886f-d3fbe41d8b72",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
             "name": "UsuariosDelete",
             "url": "http://localhost:3333/api/usuarios/2",
             "method": "DELETE",
             "sortNum": 17500,
-            "created": "2022-10-14T15:32:58.355Z",
-            "modified": "2022-10-28T17:32:51.044Z",
+            "created": "2023-05-22T22:03:39.514Z",
+            "modified": "2023-05-22T23:06:40.161Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -108,15 +152,61 @@
             "tests": []
         },
         {
-            "_id": "1e3ecf94-5988-4c26-bf11-02bc92f70cac",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "3a0f1d53-bf12-49c9-adb4-e94067d6e07b",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
-            "name": "UsuariosGetById",
-            "url": "http://localhost:3333/api/usuarios/1",
+            "name": "UpaPost",
+            "url": "http://localhost:3333/api/upas",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-22T22:27:08.998Z",
+            "modified": "2023-05-22T22:27:52.492Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"UPA 1\",\n  \"lugar\": \"Rua xxx , 20\",\n  \"telefone\": \"(47)9999999999\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "55afe413-58e7-47c0-8ce0-f9864d561855",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "UpaPut",
+            "url": "http://localhost:3333/api/upas/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-05-22T22:33:04.065Z",
+            "modified": "2023-05-22T22:33:04.065Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"UPA 1\",\n  \"lugar\": \"Rua xxx , 20\",\n  \"telefone\": \"(47)111111111\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d2dffe1-955a-4627-8a3b-dad89d9fb018",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "UpaGetById",
+            "url": "http://localhost:3333/api/upas/1",
             "method": "GET",
-            "sortNum": 20000,
-            "created": "2022-10-14T14:21:03.623Z",
-            "modified": "2022-10-28T17:30:43.686Z",
+            "sortNum": 60000,
+            "created": "2023-05-22T22:34:38.714Z",
+            "modified": "2023-05-22T22:34:38.714Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -126,15 +216,15 @@
             "tests": []
         },
         {
-            "_id": "51d9c944-45e8-4427-8843-96d781c5a66c",
-            "colId": "b04c319b-99f5-4217-84d0-fce7fc742ded",
+            "_id": "c7958a34-c358-4a69-8b09-fe237dd7ad97",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
             "containerId": "",
-            "name": "UsuariosGetAll",
-            "url": "http://localhost:3333/api/usuarios",
+            "name": "UpaGetAll",
+            "url": "http://localhost:3333/api/upas",
             "method": "GET",
-            "sortNum": 30000,
-            "created": "2022-10-14T14:21:18.132Z",
-            "modified": "2022-11-04T13:47:19.320Z",
+            "sortNum": 70000,
+            "created": "2023-05-22T22:35:05.820Z",
+            "modified": "2023-05-22T22:35:05.820Z",
             "headers": [],
             "params": [],
             "auth": {
@@ -142,6 +232,124 @@
                 "bearer": "{{access_token}}"
             },
             "tests": []
-        }        
+        },
+        {
+            "_id": "39277ee2-8f2d-4ac1-b2a0-2b23789012a0",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "UpaGetAll",
+            "url": "http://localhost:3333/api/upas/1",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-05-22T22:35:45.668Z",
+            "modified": "2023-05-22T22:35:45.668Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d43a3cfe-3fe0-466a-9a3f-94b1cdc3e62d",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "AnamnesePost",
+            "url": "http://localhost:3333/api/anamneses",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-22T23:00:08.516Z",
+            "modified": "2023-05-22T23:00:08.516Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 2,\n  \"resumo\": \"Historico\", \n  \"data\": \"2020-10-10\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e77fe2d3-75e7-408c-acd5-deff2a45b773",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "AnamneseGetAll",
+            "url": "http://localhost:3333/api/anamneses",
+            "method": "GET",
+            "sortNum": 92500,
+            "created": "2023-05-22T23:03:50.974Z",
+            "modified": "2023-05-22T23:12:03.161Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4765ac3-fb7d-4b3d-8d4e-ac56c822d5c6",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "AnamneseGetByUsuario",
+            "url": "http://localhost:3333/api/anamneses/2",
+            "method": "GET",
+            "sortNum": 93750,
+            "created": "2023-05-22T23:04:02.726Z",
+            "modified": "2023-05-22T23:12:04.449Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "763fae8e-ff7e-490b-81d7-ec387bb603c3",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "AnamnesePut",
+            "url": "http://localhost:3333/api/anamneses/2",
+            "method": "PUT",
+            "sortNum": 95000,
+            "created": "2023-05-22T23:05:11.852Z",
+            "modified": "2023-05-22T23:11:54.858Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 2,\n  \"data\": \"2020-10-12\",\n  \"resumo\": \"Historico\",\n  \"id\": 2,\n  \"usuario\": {\n    \"nome\": \"Joao\",\n    \"email\": \"joao.silverio@eduunivali.br\",\n    \"id\": 2\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "599b11ad-cb4e-44b2-9326-cb35edd0f22b",
+            "colId": "faba6f46-6926-486b-afaf-c65fe1fafc8f",
+            "containerId": "",
+            "name": "AnamneseDelete",
+            "url": "http://localhost:3333/api/anamneses/1",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-05-22T23:05:36.957Z",
+            "modified": "2023-05-22T23:07:10.658Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        }
     ]
 }

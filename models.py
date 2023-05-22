@@ -17,8 +17,9 @@ class Anamnese(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     data = Column(Date)
+    resumo = Column(String(1000))
     id_usuario = Column(Integer, ForeignKey("usuarios.id"), nullable=False)
-    usuario = relationship("Usuario", back_populates="anamneses")
+    usuario = relationship("Usuario", back_populates="anamnese")
 
 class UPA(Base):
     __tablename__ = 'upas'

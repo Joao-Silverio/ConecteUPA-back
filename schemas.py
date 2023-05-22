@@ -4,7 +4,6 @@ from pydantic import BaseModel
 
 class UsuarioBase(BaseModel):
     nome: str
-    historico: str
     email: str
 class UsuarioCreate(UsuarioBase):
     senha: str
@@ -31,10 +30,10 @@ class PaginatedUsuario(BaseModel):
 class AnamneseBase(BaseModel):
     id_usuario: int
     data: date
+    resumo: str
 class AnamneseUpdate(BaseModel):
     pass 
 class AnamneseCreate(AnamneseBase):
-    anamnese_ids: List[int] = []
     pass
 class Anamnese(AnamneseBase):
     id: int

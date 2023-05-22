@@ -89,7 +89,7 @@ def delete_upa_by_id(db: Session, upa_id: int):
 #anamnese
 def create_anamnese(db: Session, anamnese: schemas.AnamneseCreate):
     get_usuario_by_id(db, anamnese.id_usuario)
-    db_anamnese = models.Anamnese(id_usuario=anamnese.id_usuario, data=anamnese.data)
+    db_anamnese = models.Anamnese(**anamnese.dict())
     db.add(db_anamnese)
     db.commit()
     db.refresh(db_anamnese)
